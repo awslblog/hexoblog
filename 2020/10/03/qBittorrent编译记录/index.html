@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2020 | Thinking Null</title>
+  <title>qBittorrent编译记录 | Thinking Null</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Thinking Null">
-<meta property="og:url" content="http://example.com/archives/2020/index.html">
+  <meta name="description" content="Ubuntu自带的transmission不好用，种子下载完全没有速度，最重要的是不能设置代理！这还能叫下载软件，果断放弃，google一下其他下载软件。 ###Bitcomet 比特彗星在用win10时曾经用过，功能强大，界面清爽，支持中文，可惜仅有 Windows &#x2F; MacOSwine是什么？不会真有人会用wine吧？ ###Transmission界面就很GNOME，跟随系统支持暗色模式，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="qBittorrent编译记录">
+<meta property="og:url" content="http://example.com/2020/10/03/qBittorrent%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Thinking Null">
+<meta property="og:description" content="Ubuntu自带的transmission不好用，种子下载完全没有速度，最重要的是不能设置代理！这还能叫下载软件，果断放弃，google一下其他下载软件。 ###Bitcomet 比特彗星在用win10时曾经用过，功能强大，界面清爽，支持中文，可惜仅有 Windows &#x2F; MacOSwine是什么？不会真有人会用wine吧？ ###Transmission界面就很GNOME，跟随系统支持暗色模式，">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-03T12:16:00.000Z">
+<meta property="article:modified_time" content="2020-12-20T02:23:48.000Z">
 <meta property="article:author" content="神必壬">
+<meta property="article:tag" content="lib">
+<meta property="article:tag" content="FAIL">
+<meta property="article:tag" content="cmake">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Thinking Null" type="application/atom+xml">
@@ -150,274 +157,91 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-qBittorrent编译记录" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/20/README/" class="archive-article-date">
-  	<time datetime="2020-12-20T02:29:32.316Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-20</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/13/my-first-blog/" class="archive-article-date">
-  	<time datetime="2020-12-13T03:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/13/my-first-blog/">my-first-blog</a>
+    <h1 class="article-title" itemprop="name">
+      qBittorrent编译记录
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/12/13/hello-world/" class="archive-article-date">
-  	<time datetime="2020-12-13T01:59:46.548Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/07/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%B7%B2%E6%AD%A3%E5%BC%8F%E6%8E%A5%E5%85%A5ipv6%EF%BC%81/" class="archive-article-date">
-  	<time datetime="2020-11-07T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/07/%E6%9C%AC%E7%AB%99%E7%8E%B0%E5%B7%B2%E6%AD%A3%E5%BC%8F%E6%8E%A5%E5%85%A5ipv6%EF%BC%81/">本站现已正式接入ipv6！</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DNS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">typecho</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ipv6</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">DDNS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Azure</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Ubuncrash//" class="article-tag-list-link color5">Ubuncrash</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/11/01/%E6%9C%8D%E5%8A%A1%E6%95%85%E9%9A%9C%E9%80%9A%E5%91%8A/" class="archive-article-date">
-  	<time datetime="2020-11-01T01:14:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/11/01/%E6%9C%8D%E5%8A%A1%E6%95%85%E9%9A%9C%E9%80%9A%E5%91%8A/">服务故障通告</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Status</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/状态//" class="article-tag-list-link color3">状态</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/04/h5ai%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88-Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E9%95%9C%E5%83%8F%E6%90%AD%E5%BB%BA/" class="archive-article-date">
-  	<time datetime="2020-10-04T10:31:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/04/h5ai%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88-Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E9%95%9C%E5%83%8F%E6%90%AD%E5%BB%BA/">h5ai目录浏览-Firefox浏览器镜像搭建</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Firefox</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/03/qBittorrent%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/" class="archive-article-date">
+        
+        <a href="/2020/10/03/qBittorrent%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/" class="archive-article-date">
   	<time datetime="2020-10-03T12:16:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/03/qBittorrent%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/">qBittorrent编译记录</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Ubuntu自带的transmission不好用，种子下载完全没有速度，最重要的是不能设置代理！这还能叫下载软件，果断放弃，google一下其他下载软件。</p>
+<p>###Bitcomet 比特彗星<br>在用win10时曾经用过，功能强大，界面清爽，支持中文，可惜仅有 Windows / MacOS<br><del>wine是什么？不会真有人会用wine吧？</del></p>
+<p>###Transmission<br>界面就很GNOME，跟随系统支持暗色模式，可惜不能设置代理。</p>
+<p>###qBittorrent<br>接下来就轮到qBittorrent上场了，找了一圈，好像没有编译好的二进制文件，（<del>垃圾机场把域名含torrent的网站都ban了，美其名曰防止版权争议</del>），所以只好到github上拉源代码，自己编译。<br>其实有编译好的版本的 <a target="_blank" rel="noopener" href="https://github.com/c0re100/qBittorrent-Enhanced-Edition" title="Github ">Github </a><br><del>但要整活总是有理由的！</del></p>
+<p>####开始了！<br>先下载源码包 <a target="_blank" rel="noopener" href="https://github.com/qbittorrent/qBittorrent/releases">https://github.com/qbittorrent/qBittorrent/releases</a><br>然后 <code>./configure</code>本来以为会一切顺利，结果报错了</p>
+<blockquote>
+<p>No package ‘Qt5Svg’ found </p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install libqt5svg5-dev</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+<p>当然，错误怎么可能只有一个？<del>不愧是我</del></p>
+<blockquote>
+<p>configure: error: Could not find a version of the Boost::System library!</p>
+</blockquote>
+<p>emm…这是缺了boost ？ 没错 ，Boost是一个cpp库，就像react是一个javascript库一样。<br>有人遇到了和我一样的问题 <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/13058367/problems-with-configure-for-libtorrent-on-linux" title="stackoverflow">stackoverflow</a><br>安装，并指定boost目录解决问题</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> apt-get install libboost-filesystem-dev libboost-thread-dev</span></span><br><span class="line"><span class="meta"> $</span><span class="bash"> apt-get install libboost-system-dev</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> ./configure --with-boost-libdir=/usr/lib64</span></span><br></pre></td></tr></table></figure>
+
+<p><code>apt-get insatll......</code>找不到匹配，只好再从源代码编译。</p>
+<blockquote>
+<p>checking for libtorrent… no configure: error: Package requirements (libtorrent-rasterbar &gt;= 1.1.10) were not met:</p>
+</blockquote>
+<p>啊这？怎么还不行，apt有安装不了libtorrent，那就从 <a target="_blank" rel="noopener" href="https://libtorrent.org/">https://libtorrent.org</a> 上寻求帮助。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> git clone --recurse-submodules https://github.com/arvidn/libtorrent.git</span><br><span class="line">cd libtorrent/</span><br><span class="line">mkdir build</span><br><span class="line">cmake ..</span><br><span class="line">sudo make </span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+<p>找到qBittorrent目录，再 <code>./configure</code></p>
+<blockquote>
+<p>configure: Good, the configure finished.</p>
+</blockquote>
+<p>终于成功了！泪，拉了出来！差不多可以开始make了</p>
+<p><code> SUDO make</code><br>噔噔咚，又报错了</p>
+<blockquote>
+<p>/bin/sh: 1: lrelease-qt5: not found<br>make[1]: <strong>* [Makefile:1369：webui/www/translations/webui_ar.qm] 错误 127<br>make[1]: 离开目录“/qBittorrent-release-4.2.5/src”<br>make: *</strong> [Makefile:47：sub-src-make_first] 错误 2</p>
+</blockquote>
+<p>那就补依赖 <code>sudo apt-get install qttools5-dev-tools</code><br>这不就好起来了吗？ ……又报错了。。。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">In file included from base/bittorrent/magneturi.h:32,</span><br><span class="line">                 from base/bittorrent/magneturi.cpp:29:</span><br><span class="line">/usr/local/include/libtorrent/add_torrent_params.hpp:216:13: note: declared here</span><br><span class="line">  216 |   sha1_hash info_hash;</span><br><span class="line">      |             ^~~~~~~~~</span><br><span class="line">compiling base/bittorrent/peeraddress.cpp</span><br><span class="line">compiling base/bittorrent/peerinfo.cpp</span><br><span class="line">compiling base/bittorrent/private/bandwidthscheduler.cpp</span><br><span class="line">compiling base/bittorrent/private/filterparserthread.cpp</span><br><span class="line">base/bittorrent/private/filterparserthread.cpp: In function ‘bool &#123;anonymous&#125;::parseIPAddress(const char*, boost::asio::ip::address&amp;)’:</span><br><span class="line">base/bittorrent/private/filterparserthread.cpp:99:39: error: ‘from_string’ is not a member of ‘boost::asio::ip::address_v6’</span><br><span class="line">   99 |             address = lt::address_v6::from_string(data, ec);</span><br><span class="line">      |                                       ^~~~~~~~~~~</span><br><span class="line">make[1]: *** [Makefile:3198：filterparserthread.o] 错误 1</span><br></pre></td></tr></table></figure>
+
+<p>这不是代码的问题吗？谷歌了一下没结果，先留个坑，以后补上，即使没编译成功，还是有所收获的。<br>####留坑待填<br>2020-10-03 20:51 星期六</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -437,7 +261,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -450,187 +274,112 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/10/03/qBittorrent%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/25/2019ncovmemory/" class="archive-article-date">
-  	<time datetime="2020-09-25T14:06:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-25</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/10/04/h5ai%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88-Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E9%95%9C%E5%83%8F%E6%90%AD%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          h5ai目录浏览-Firefox浏览器镜像搭建
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/09/25/2019ncovmemory/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2019ncovmemory</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/25/2019ncovmemory/">2019ncovmemory</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ncov</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2019</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/默认分类//" class="article-tag-list-link color5">默认分类</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/19/dnscrypt-proxy%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2020-09-19T11:17:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/19/dnscrypt-proxy%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">dnscrypt-proxy的安装与使用</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DNS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DoH</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DoT</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/HTTPS//" class="article-tag-list-link color1">HTTPS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/23/Telegram%E8%B4%A6%E5%8F%B7%E6%97%A0%E6%95%85%E8%A2%ABban%E6%9C%89%E6%84%9F-Acoount-banned-without-a-reason.-My-life-ruined!!/" class="archive-article-date">
-  	<time datetime="2020-08-23T15:03:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/23/Telegram%E8%B4%A6%E5%8F%B7%E6%97%A0%E6%95%85%E8%A2%ABban%E6%9C%89%E6%84%9F-Acoount-banned-without-a-reason.-My-life-ruined!!/">Telegram账号无故被ban有感-Acoount banned without a reason. My life ruined!!</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">NMSL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Telegram</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">tg</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/默认分类//" class="article-tag-list-link color5">默认分类</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/page/2/">Next &amp;raquo;</a>
-    </nav>
+  
+
+  
+
   
 
 
@@ -654,8 +403,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
