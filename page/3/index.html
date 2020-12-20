@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2020 | Thinking Null</title>
+  <title>Thinking Null</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Thinking Null">
-<meta property="og:url" content="http://example.com/archives/2020/page/2/index.html">
+<meta property="og:url" content="http://example.com/page/3/index.html">
 <meta property="og:site_name" content="Thinking Null">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="神必壬">
@@ -152,103 +152,60 @@
           <div id="js-content" class="content-ll">
             
   
-  
+    <article id="post-Ubuntu触摸板失灵解决-失败" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/04/h5ai%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88-Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E9%95%9C%E5%83%8F%E6%90%AD%E5%BB%BA/" class="archive-article-date">
-  	<time datetime="2020-10-04T10:31:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-04</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/04/h5ai%E7%9B%AE%E5%BD%95%E6%B5%8F%E8%A7%88-Firefox%E6%B5%8F%E8%A7%88%E5%99%A8%E9%95%9C%E5%83%8F%E6%90%AD%E5%BB%BA/">h5ai目录浏览-Firefox浏览器镜像搭建</a>
+      <a class="article-title" href="/2020/08/13/Ubuntu%E8%A7%A6%E6%91%B8%E6%9D%BF%E5%A4%B1%E7%81%B5%E8%A7%A3%E5%86%B3-%E5%A4%B1%E8%B4%A5/">Ubuntu触摸板失灵解决-失败</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/08/13/Ubuntu%E8%A7%A6%E6%91%B8%E6%9D%BF%E5%A4%B1%E7%81%B5%E8%A7%A3%E5%86%B3-%E5%A4%B1%E8%B4%A5/" class="archive-article-date">
+  	<time datetime="2020-08-13T10:57:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]<br>##Ubuntu新安装后的相关配置<br>####合上笔记本盖子再打开会导致触摸板失灵<br>解决办法</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo modprobe -r psmouse</span><br><span class="line">sudo modprobe psmouse proto=imps</span><br></pre></td></tr></table></figure>
+<p>触摸板现在就可以用了。**注意：使用此方法后多点触控依然不可用，将会导致如滚轮翻页等操作失灵 **<br>新建文件<code>/etc/modprobe.d/options</code>，里面填入代码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">options psmouse proto=imps</span><br></pre></td></tr></table></figure>
+
+<p>之后保存据说就可以彻底解决问题啦（转自网络）<br>####其他问题<br>以后遇到再填坑</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Firefox</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/03/qBittorrent%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/" class="archive-article-date">
-  	<time datetime="2020-10-03T12:16:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/03/qBittorrent%E7%BC%96%E8%AF%91%E8%AE%B0%E5%BD%95/">qBittorrent编译记录</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">lib</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Crash</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">FAIL</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Bugs</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">cmake</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Ubuncrash</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -261,141 +218,314 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/13/Ubuntu%E8%A7%A6%E6%91%B8%E6%9D%BF%E5%A4%B1%E7%81%B5%E8%A7%A3%E5%86%B3-%E5%A4%B1%E8%B4%A5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/25/2019ncovmemory/" class="archive-article-date">
-  	<time datetime="2020-09-25T14:06:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-25</time>
-</a>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-葛军系数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/25/2019ncovmemory/">2019ncovmemory</a>
+      <a class="article-title" href="/2020/07/28/%E8%91%9B%E5%86%9B%E7%B3%BB%E6%95%B0/">葛军系数</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/07/28/%E8%91%9B%E5%86%9B%E7%B3%BB%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2020-07-28T10:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>定义葛军系数为</strong>$$\beta$$</p>
+<p><strong>把一场考试的平均得分率</strong>(平均分/总分)**记为 **$$\alpha$$</p>
+<p>则有</p>
+<blockquote>
+<p>$$\dfrac {100} \alpha = \beta$$</p>
+</blockquote>
+<p>　　葛军系数是怎么回事呢？葛军相信大家都很熟悉，但是葛军系数是怎么回事呢，下面就让小编带大家一起了解吧。<br>　　葛军系数，其实就是考试的平均得分率(平均分/总分)，大家可能会很惊讶葛军怎么会系数呢？但事实就是这样，小编也感到非常惊讶。<br>　　这就是关于葛军系数的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ncov</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Latex</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">2019</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">NMSL</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">葛军</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">高考</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/默认分类//" class="article-tag-list-link color5">默认分类</a>
+        			<a href="/categories/数学//" class="article-tag-list-link color3">数学</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/28/%E8%91%9B%E5%86%9B%E7%B3%BB%E6%95%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/19/dnscrypt-proxy%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2020-09-19T11:17:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-19</time>
-</a>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-转载：Ubuntu-为主分区扩容-–-命令行" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/19/dnscrypt-proxy%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">dnscrypt-proxy的安装与使用</a>
+      <a class="article-title" href="/2020/07/27/%E8%BD%AC%E8%BD%BD%EF%BC%9AUbuntu-%E4%B8%BA%E4%B8%BB%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9-%E2%80%93-%E5%91%BD%E4%BB%A4%E8%A1%8C/">转载：Ubuntu 为主分区扩容 – 命令行</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/07/27/%E8%BD%AC%E8%BD%BD%EF%BC%9AUbuntu-%E4%B8%BA%E4%B8%BB%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9-%E2%80%93-%E5%91%BD%E4%BB%A4%E8%A1%8C/" class="archive-article-date">
+  	<time datetime="2020-07-27T14:11:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>事情是这样的，服务器系统盘是块 120GB 的 SSD，当时装系统的时候只给了 50GB，还剩下 70GB 的剩余容量，那么现在由于东西越来越多，需要把剩下的 70GB 容量也用上，先是去谷歌了一下，奇葩的事情发生了，全是 Ubuntu 图形界面的教程，史上第一次，震撼 czp。</p>
+<pre><code>这个笔记只适用于同一块硬盘扩容</code></pre>
+<p>为了不让服务器遭遇到毁灭级的打击，我还是开了台测试用的服务器先试试水，不然的话，万一狗带了，那什么都没了。</p>
+<p>##过程：</p>
+<p>可以看到，根目录只有 50GB</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">root@localhost:~# df -h</span><br><span class="line"></span><br><span class="line">Filesystem Size Used Avail Use% Mounted on</span><br><span class="line">udev 3.9G 0 3.9G 0% /dev</span><br><span class="line">tmpfs 798M 1.1M 797M 1% /run</span><br><span class="line">/dev/vda2 49G 39G 8.0G 83% /</span><br></pre></td></tr></table></figure>
+<p>还有 70GB 目前没用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">root@localhost:~# fdisk -l</span><br><span class="line"></span><br><span class="line">Disk /dev/vda: 120 GiB, 128849018880 bytes, 251658240 sectors</span><br><span class="line">Units: sectors of 1 * 512 = 512 bytes</span><br><span class="line">Sector size (logical/physical): 512 bytes / 512 bytes</span><br><span class="line">I/O size (minimum/optimal): 512 bytes / 512 bytes</span><br><span class="line">Disklabel type: gpt</span><br><span class="line">Disk identifier: 0A82F7CF-FB16-4A55-ACF6-5D4339FA7608</span><br><span class="line"></span><br><span class="line">Device Start End Sectors Size Type</span><br><span class="line">/dev/vda1 2048 4095 2048 1M BIOS boot</span><br><span class="line">/dev/vda2 4096 104855551 104851456 50G Linux filesystem</span><br><span class="line">/dev/vda3 104855552 251658206 146802655 70G Linux filesystem</span><br></pre></td></tr></table></figure>
+<p>选择 /dev/vda，并且输入p（print）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">root@localhost:~# parted /dev/vda</span><br><span class="line"></span><br><span class="line">GNU Parted 3.2</span><br><span class="line">Using /dev/vda</span><br><span class="line">Welcome to GNU Parted! Type &#x27;help&#x27; to view a list of commands.</span><br><span class="line">(parted) p  # 输入p</span><br><span class="line">Model: Virtio Block Device (virtblk)</span><br><span class="line">Disk /dev/vda: 129GB</span><br><span class="line">Sector size (logical/physical): 512B/512B</span><br><span class="line">Partition Table: gpt</span><br><span class="line">Disk Flags:</span><br><span class="line"></span><br><span class="line">Number Start End Size File system Name Flags</span><br><span class="line">1 1049kB 2097kB 1049kB bios_grub</span><br><span class="line">2 2097kB 53.7GB 53.7GB ext4</span><br></pre></td></tr></table></figure>
+<p>输入 resizepart 2，输入 yes，End 这就填写上一步看到的磁盘空间(Disk /dev/vda: 129GB) 129GB，这个应该是换算出了问题，最后再输入 q (quit) 退出</p>
+<blockquote>
+<p>由于我是系统盘，这个 /dev/vda2 是活动中的分区，会有警告是否要继续，我这里是继续。由于我是系统盘，这个 /dev/vda2 是活动中的分区，会有警告是否要继续，我这里是继续。</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(parted) resizepart 2</span><br><span class="line">Warning: Partition /dev/vda2 is being used. Are you sure you want to continue?</span><br><span class="line">Yes/No? yes</span><br><span class="line">End? [53.7GB]? 129GB</span><br><span class="line">(parted) q</span><br><span class="line">Information: You may need to update /etc/fstab.</span><br></pre></td></tr></table></figure>
+<p>退出之后，用 df -h 命令看发现没有任何改变，但是使用 lsblk 命令会发现已经扩容成功了，因为这只是 block device 容量变大了，还没有反映到 file system 中</p>
+<p>需要使用 resize2fs 命令更新</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">root@localhost:~# resize2fs /dev/vda2</span><br><span class="line">resize2fs 1.44.1 (24-Mar-2018)</span><br><span class="line">Filesystem at /dev/vda2 is mounted on /; on-line resizing required</span><br><span class="line">old_desc_blocks = 7, new_desc_blocks = 15</span><br><span class="line">The filesystem on /dev/vda2 is now 31456763 (4k) blocks long.</span><br></pre></td></tr></table></figure>
+<p>这个时候用 df -h 查看</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">root@localhost:~# df -h</span><br><span class="line">Filesystem Size Used Avail Use% Mounted on</span><br><span class="line">udev 3.9G 0 3.9G 0% /dev</span><br><span class="line">tmpfs 798M 1.1M 797M 1% /run</span><br><span class="line">/dev/vda2 118G 39G 75G 35% /</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>lsblk 查看</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@localhost:~# lsblk</span><br><span class="line">NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT</span><br><span class="line">loop1 7:1 0 6.6M 1 loop /snap/libxslt/44</span><br><span class="line">loop2 7:2 0 91.3M 1 loop /snap/core/8592</span><br><span class="line">loop3 7:3 0 9.6M 1 loop /snap/libxslt/67</span><br><span class="line">loop4 7:4 0 91.4M 1 loop /snap/core/8689</span><br><span class="line">vda 252:0 0 120G 0 disk</span><br><span class="line">├─vda1 252:1 0 1M 0 part</span><br><span class="line">└─vda2 252:2 0 120G 0 part /</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>全部都没有问题，成功。</p>
+<h1 id="进行磁盘操作时请务必备份数据！！！"><a href="#进行磁盘操作时请务必备份数据！！！" class="headerlink" title="进行磁盘操作时请务必备份数据！！！"></a><strong>进行磁盘操作时请务必备份数据！！！</strong></h1><p>####以上内容转载自：<a target="_blank" rel="noopener" href="https://mikublog.com/tech/2458" title="Ubuntu 为主分区扩容 – 命令行-mikublog">Ubuntu 为主分区扩容 – 命令行-mikublog</a></p>
+<hr>
+<p>##开始动手实践</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Azureuser@hk-b1s ~]$ lsblk</span><br><span class="line">NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT</span><br><span class="line">sda       8:0    0   64G  0 disk </span><br><span class="line">├─sda1    8:1    0  500M  0 part /boot</span><br><span class="line">├─sda2    8:2    0   29G  0 part /</span><br><span class="line">├─sda14   8:14   0    4M  0 part </span><br><span class="line">└─sda15   8:15   0  495M  0 part /boot/efi</span><br><span class="line">sdb       8:16   0    4G  0 disk </span><br><span class="line">└─sdb1    8:17   0    4G  0 part /mnt/resource</span><br><span class="line">sdc       8:32   0   64G  0 disk /mnt/64g</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>名为sda的一块盘64G只用了30G，那怎么扩容呢？</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[Azureuser@hk-b1s ~]$ sudo parted /dev/sda2</span><br><span class="line">GNU Parted 3.2</span><br><span class="line">使用 /dev/sda2</span><br><span class="line">Welcome to GNU Parted! Type &#x27;help&#x27; to view a list of commands.</span><br><span class="line">(parted) p                                                                </span><br><span class="line">Model: 未知 (unknown)</span><br><span class="line">Disk /dev/sda2: 31.2GB</span><br><span class="line">Sector size (logical/physical): 512B/4096B</span><br><span class="line">Partition Table: loop</span><br><span class="line">Disk Flags: </span><br><span class="line"></span><br><span class="line">Number  Start  End     Size    File system  标志</span><br><span class="line"> 1      0.00B  31.2GB  31.2GB  xfs</span><br><span class="line"></span><br><span class="line">(parted) resizepart 1</span><br><span class="line">警告: Partition /dev/sda2 is being used. Are you sure you want to continue?</span><br><span class="line">是/Yes/否/No? yes</span><br><span class="line">结束点？  [31.2GB]?                                                       </span><br><span class="line">(parted) q                                                                </span><br><span class="line">信息: You may need to update /etc/fstab.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>啊，就连退出信息都和教程完全一致呢，，，<br>那赶紧下一步</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[Azureuser@hk-b1s ~]$ sudo resize2fs /dev/sda2</span><br><span class="line">resize2fs 1.45.4 (23-Sep-2019)</span><br><span class="line">resize2fs: 超级块中的幻数有错 尝试打开 /dev/sda2 时</span><br><span class="line">找不到有效的文件系统超级块。</span><br></pre></td></tr></table></figure>
+<p><strong>？？？</strong><br>这是什么神奇的错误原因？<br><strong><em>WDNMD</em></strong><br>####最后一步<br>检测一下结果</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Azureuser@hk-b1s ~]$ lsblk</span><br><span class="line">NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT</span><br><span class="line">sda       8:0    0   64G  0 disk </span><br><span class="line">├─sda1    8:1    0  500M  0 part /boot</span><br><span class="line">├─sda2    8:2    0   29G  0 part /</span><br><span class="line">├─sda14   8:14   0    4M  0 part </span><br><span class="line">└─sda15   8:15   0  495M  0 part /boot/efi</span><br><span class="line">sdb       8:16   0    4G  0 disk </span><br><span class="line">└─sdb1    8:17   0    4G  0 part /mnt/resource</span><br><span class="line">sdc       8:32   0   64G  0 disk /mnt/64g</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>全部都是问题，失败。</p>
+<p>###后记<br>服务器迁移到了Ubuntu 18.04 LTS，控制台修改硬盘容量直接就可以自动识别，不需要手动操作了。 Ubuntu是好文明！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DNS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Bugs</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DoH</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DoT</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Ubuncrash</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/HTTPS//" class="article-tag-list-link color1">HTTPS</a>
+        			<a href="/categories/Ubuncrash//" class="article-tag-list-link color5">Ubuncrash</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/27/%E8%BD%AC%E8%BD%BD%EF%BC%9AUbuntu-%E4%B8%BA%E4%B8%BB%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9-%E2%80%93-%E5%91%BD%E4%BB%A4%E8%A1%8C/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/23/Telegram%E8%B4%A6%E5%8F%B7%E6%97%A0%E6%95%85%E8%A2%ABban%E6%9C%89%E6%84%9F-Acoount-banned-without-a-reason.-My-life-ruined!!/" class="archive-article-date">
-  	<time datetime="2020-08-23T15:03:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-23</time>
-</a>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-浅谈mysql导入txt" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/23/Telegram%E8%B4%A6%E5%8F%B7%E6%97%A0%E6%95%85%E8%A2%ABban%E6%9C%89%E6%84%9F-Acoount-banned-without-a-reason.-My-life-ruined!!/">Telegram账号无故被ban有感-Acoount banned without a reason. My life ruined!!</a>
+      <a class="article-title" href="/2020/07/26/%E6%B5%85%E8%B0%88mysql%E5%AF%BC%E5%85%A5txt/">浅谈mysql导入txt</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/07/26/%E6%B5%85%E8%B0%88mysql%E5%AF%BC%E5%85%A5txt/" class="archive-article-date">
+  	<time datetime="2020-07-26T06:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###如何导入数据库<br>####（从本地文件）</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">LOAD</span> <span class="keyword">DATA</span> <span class="keyword">LOCAL</span> <span class="keyword">INFILE</span> <span class="string">&quot;/mnt/resource/uploads/mirrors.log&quot;</span> <span class="keyword">INTO</span> <span class="keyword">TABLE</span> <span class="number">1</span>_</span><br><span class="line">txt <span class="keyword">FIELDS</span> <span class="keyword">TERMINATED</span> <span class="keyword">BY</span> <span class="string">&#x27; &#x27;</span> <span class="keyword">ENCLOSED</span> <span class="keyword">BY</span> <span class="string">&#x27;&quot;&#x27;</span> <span class="keyword">LINES</span> <span class="keyword">TERMINATED</span> <span class="keyword">BY</span> <span class="string">&#x27;\n&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+
+<p>LOAD DATA LOCAL INFILE            //从本地导入文件</p>
+<p>“/mnt/resource/uploads/mirrors.log” INTO TABLE 1_<br>txt         //导入到1_txt表中</p>
+<p>FIELDS TERMINATED BY ‘ ‘         //由空格分割数据</p>
+<p>ENCLOSED BY ‘“‘ LINES TERMINATED BY ‘\n’;</p>
+<p><img src="https://awsl.wtf/usr/uploads/2020/07/665110407.png"><br>####（从phpMyAdmin）<br>开始报错</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//some errors</span><br><span class="line">mysqli::real_connect(): (HY000/2002): Connection refused on Live</span><br><span class="line"></span><br><span class="line">check mysqli.allow_local_infile</span><br><span class="line"></span><br><span class="line">LOAD DATA LOCAL INFILE forbidden in /path/to/my/application</span><br></pre></td></tr></table></figure>
+<p><del>这么屑的php有使用的必要吗？</del><br>###如何登陆My$QL</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">	mysql -uroot -p114514 -Dmirrors</span></span><br></pre></td></tr></table></figure>
+<p>-uroot:表示用root身份登录；<br>-p114514:表示密码为114514；<br>-Dmirrors:表示使用mirrors这个数据库。<br><strong>参数和值之间不需要空格！</strong><br>mysql -uroot -p123456   ✅<br>mysql -u root -p 123456  ❌<br>###开始运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[Azureuser@hk-b1s ~]$ mysql -uroot -p114514</span><br><span class="line">ERROR 1045 (28000): Access denied for user &amp;apos;root&amp;apos;@&amp;apos;localhost&amp;apos; (using password: YES)</span><br></pre></td></tr></table></figure>
+<p><strong>竟然登录不能？<del>my$ql给爷死</del></strong><br>原因：My$QL在5.6版本后加入了安 全 机 制，不能在终端中命令直接包含密码。<br><strong>解决办法</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export MYSQL_PWD=114514</span><br></pre></td></tr></table></figure>
+<p>将终端中的环境变量设置好即可自动登录。</p>
+<p>未<br>完<br>待<br>续<br>。<br>。<br>。<br>（</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -405,42 +535,156 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Telegram</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">浅谈</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">tg</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/默认分类//" class="article-tag-list-link color5">默认分类</a>
+        			<a href="/categories/分币OS//" class="article-tag-list-link color5">分币OS</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/26/%E6%B5%85%E8%B0%88mysql%E5%AF%BC%E5%85%A5txt/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
+    <article id="post-野兽先辈超越数说" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
-    </div></section>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/14/%E9%87%8E%E5%85%BD%E5%85%88%E8%BE%88%E8%B6%85%E8%B6%8A%E6%95%B0%E8%AF%B4/">野兽先辈超越数说</a>
+    </h1>
   
 
+        
+        <a href="/2020/07/14/%E9%87%8E%E5%85%BD%E5%85%88%E8%BE%88%E8%B6%85%E8%B6%8A%E6%95%B0%E8%AF%B4/" class="archive-article-date">
+  	<time datetime="2020-07-14T02:53:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-14</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> $$e[(e+\pi)(e+e+\pi)]^e+\frac e {(\pi^e-e)(e+e^\pi-\pi^e)}\approx114514.1919810$$</p>
+<p>[来源Twitter]<br>[来源Twitter]: <a target="_blank" rel="noopener" href="https://twitter.com/hagebooi/status/713007177393262593">https://twitter.com/hagebooi/status/713007177393262593</a> “来源Twitter”</p>
+        
+          <a class="article-more-a" href="/2020/07/14/%E9%87%8E%E5%85%BD%E5%85%88%E8%BE%88%E8%B6%85%E8%B6%8A%E6%95%B0%E8%AF%B4/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Latex</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">114514</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/数学//" class="article-tag-list-link color3">数学</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/07/14/%E9%87%8E%E5%85%BD%E5%85%88%E8%BE%88%E8%B6%85%E8%B6%8A%E6%95%B0%E8%AF%B4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2020/">&amp;laquo; Prev</a><a class="page-number" href="/archives/2020/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2020/page/3/">3</a><a class="page-number" href="/archives/2020/page/4/">4</a><a class="extend next" rel="next" href="/archives/2020/page/3/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -464,9 +708,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
